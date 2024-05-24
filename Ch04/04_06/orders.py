@@ -3,6 +3,8 @@ import pandas as pd
 
 df = pd.read_csv('orders.csv', parse_dates=['time'])
 df
+# %%
+df.dtypes
 
 # %%
 def is_valid_row(row):
