@@ -16,6 +16,7 @@ df
 # %%
 import re
 
+df2 = pd.read_csv('donations.csv')
 
 def fix_col(col):
     """Fix column name
@@ -28,5 +29,6 @@ def fix_col(col):
         .replace(' ', '_')
     )
 
-df.rename(columns=fix_col, inplace=True)
-df
+df2.rename(columns=fix_col, inplace=True)
+df2
+# %%

@@ -24,5 +24,10 @@ prices = df.groupby('name')['price'].transform(np.mean)
 prices
 
 # %%
+# test
+#prices = df.groupby('name')['price'].mean()
+#prices
+
+# %%
 df['price'].fillna(prices, inplace=True)
 df
